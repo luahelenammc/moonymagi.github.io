@@ -10,6 +10,7 @@
             background-color: #1f1f1f; /* Cor de fundo escura */
             font-family: Arial, sans-serif;
             text-align: center;
+  color:white;
         }
 
         
@@ -24,9 +25,18 @@
     transition: background 0.6s, box-shadow 0.6s;
 }
 
+
+.usa {
+  background: rgba(255, 45, 45, 0.3);
+}
+
+.brazil {
+    background: rgba(47, 179, 57, 0.3);
+}
+
 .usa:hover {
-    background: rgb(255, 45, 45);
-    box-shadow: 0 0 0 3px rgb(255, 45, 45);
+  background: rgb(255, 45, 45);  
+  box-shadow: 0 0 0 3px rgb(255, 45, 45);
 }
 
 .brazil:hover {
@@ -42,8 +52,8 @@
     /* Estilos para o texto dentro da classe .language-option */
 }
 
-.language-option:hover div {
-    /* Estilos para o texto dentro da classe .language-option no hover */
+.language-option:hover div {  
+  /* Estilos para o texto dentro da classe .language-option no hover */
 }
 
         .language-option:hover {
@@ -54,25 +64,52 @@
             text-decoration:none;
         }
 
- 
+.idioma {
+  font-size:20px;
+  font-weight:bold;
+  margin:5px 0;
+}
 
+.descricao {
+  font-size:13px;
+  font-style:italic;
+}
+
+.titulo {
+  font-size:16px;
+  font-size: italic;
+  opacity:0.6;
+}
+
+.nome {
+  font-size:30px;
+  color:#a2ffd7;
+  font-weight:bold;
+  margin:-15px 0 15px 0;
+  font-family: Playfair Display, serif;
+}
         
         
     </style>
 </head>
 <body>
-    <div align="center">
+     <div align="center">
+    
+    <div><img src="images/logotype.png" style="max-width:400px; margin-left:-30px;"></div>
+    <div class="nome" style="font-style:italic;">Retro Gaming Blog</div>
+    <div class="titulo">Language <span style="opacity:0.5">/</span> Idioma</div>
+    
 <a href="https://bit.ly/retrogamingblog" class="language-option usa">
-    <img src="images/usa.png" style="max-width:250px;">
-    <div>English</div>
-    <div>Translated by Google. Might not be 100% accurate.</div>
+    <img src="images/usa.png" style="max-width:235px;">
+    <div class="idioma">English</div>
+    <div class="descricao">Translated by Google.
+      <br><span style="opacity:0.4;">Might not be 100% accurate.</span></div>
 </a>
 
 <a href="https://blog.moonymagi.com" class="language-option brazil">
     <img src="images/brazil.png" style="max-width:250px;">
-    <div>Português Brasileiro</div>
-    <div>Idioma original</div>
+    <div class="idioma">Português Brasileiro</div>
+    <div class="descricao">Idioma original</div>
 </a>
     </div>
-</body>
 </html>
